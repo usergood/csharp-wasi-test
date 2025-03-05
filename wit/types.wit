@@ -9,9 +9,6 @@ interface types {
   record refresh-token {
     refreshtoken: string,
   }
-  record avatar {
-    avatar: string,
-  }
   record date-of-birth {
     dateofbirth: string,
   }
