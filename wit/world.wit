@@ -5,7 +5,6 @@ interface account {
   account-login: func(code: string, login-provider: string) -> auth-response;
 }
 
-/// This is the Ray Account API
 world api {
   export account;
 }
