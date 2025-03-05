@@ -1,0 +1,39 @@
+
+interface types {
+  record auth-token {
+    authtoken: string,
+  }
+  record expiry-time {
+    expirytime: string,
+  }
+  record refresh-token {
+    refreshtoken: string,
+  }
+  record avatar {
+    avatar: string,
+  }
+  record date-of-birth {
+    dateofbirth: string,
+  }
+  record email {
+    email: string,
+  }
+  record id {
+    id: string,
+  }
+  record username {
+    username: string,
+  }
+  record private-profile {
+    email: email,
+    id: id,
+    username: option<username>,
+  }
+  record auth-response {
+    auth-token: auth-token,
+    auth-token-expiry-time: expiry-time,
+    refresh-token: refresh-token,
+    refresh-token-expiry-time: expiry-time,
+    profile: private-profile,
+  }
+}
